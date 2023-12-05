@@ -16,6 +16,7 @@ function Login(){
         e.preventDefault();
         try {
             const res = await axios.post(`${API_BASE_URL}${LOGIN}`,user);
+            // const res = await.axios.post('https://api-easyparking.onrender.com/auth/login')
                 setUser({
                     email: '',
                     password: ''
